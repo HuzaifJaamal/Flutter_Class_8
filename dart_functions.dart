@@ -67,11 +67,13 @@ studentData(String name, String section, String rollNumber) {
 }
 
 // 2. Parameter Type is Required + Name Parameter:
+// In this use {} inside the ().
 student({required name, required String section, required String rollNumber}) {
   print("$name ka roll number: $rollNumber & class section $section");
 }
 
 // 3. Parameter Type is Required + Optional Parameter:
+// In this use {} inside the ().
 //        Required Value  :   Optional Value   :  Required Value
 //                        :   / Defaul Value   :
 students(
