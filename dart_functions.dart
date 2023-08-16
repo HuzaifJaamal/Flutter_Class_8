@@ -9,6 +9,11 @@ void main() {
   sumOfTwoNumber();
   print(result);
   print(sumNumber(12, 4));
+
+  List<int> numbers = [3, 5, 7, 2, 8, 0, 9];
+  for (var i in numbers) {
+    numberTable(i);
+  }
 }
 
 num result = 0;
@@ -72,4 +77,11 @@ student({required name, required String section, required String rollNumber}) {
 students(
     {required String name, String section = "B", required String rollNumber}) {
   print("$name ka roll number: $rollNumber & class section $section");
+}
+
+numberTable(num number) {
+  for (var i = 1; i <= 10; i++) {
+    print("$number x $i = ${number * i}");
+  }
+  print("============");
 }
